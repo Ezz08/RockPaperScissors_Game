@@ -42,3 +42,36 @@ body {
     padding: 8px 15px;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 26px;
+    }
+
+    .move-button {
+        width: 100px;
+        height: 100px;
+        margin-right: 5px;
+    }
+
+    .move-icon {
+        height: 40px;
+    }
+
+    .result {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .score {
+        margin-top: 45px;
+    }
+
+    .reset-score-button,
+    .auto-play {
+        font-size: 14px;
+        padding: 10px 15px;
+        margin: 5px;
+    }
+}
