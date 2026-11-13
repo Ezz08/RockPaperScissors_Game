@@ -85,8 +85,8 @@ function pickComputerMove() {
 
 const moveButtons = document.querySelectorAll('.move-button');
 
-moveButtons.forEach(function (button) {
-    button.addEventListener('click', function () {
+moveButtons.forEach( (button) => {
+    button.addEventListener('click', () => {
         const playerMove = button.dataset.move;
 
         playGame(playerMove);
@@ -98,7 +98,7 @@ moveButtons.forEach(function (button) {
 
 const resetButton = document.querySelector('.reset-score-button');
 
-resetButton.addEventListener('click', function () {
+resetButton.addEventListener('click', () => {
     score.wins = 0;
     score.losses = 0;
     score.ties = 0;
@@ -115,9 +115,9 @@ const autoButton = document.querySelector('.auto-play');
 let isAutoPlaying = false;
 let intervalId;
 
-autoButton.addEventListener('click', function () {
+autoButton.addEventListener('click', () => {
     if (!isAutoPlaying) {
-        intervalId = setInterval(function () {
+        intervalId = setInterval( () => {
             const playerMove = pickComputerMove();
             playGame(playerMove);
 
